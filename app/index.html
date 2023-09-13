@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/favicon/cerasus.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/dist/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/img/favicon/cerasus.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/dist/main.css" />
     <title>Restaurant Cerasus</title>
-</head>
-<body>
-    <header></header>
-    <aside></aside>
-    <main>
-        <div class="test">
-            <h1>TEST TEST TEST</h1>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">
+          <h1 class="logo-text"></h1>
+          <p class="logo-name">Restaurant Cerasus</p>
         </div>
-    </main>
-    <footer></footer>
+        <div class="navigation-button">
+          <input type="checkbox" id="nav-check" />
+          <label for="nav-check">
+            <span></span><span></span><span></span>
+          </label>
+        </div>
+        <section class="section hero">
+          <h2 class="hero-title">Ceren Çetinyürek</h2>
+          <p class="hero-description">
+            "Lorem ipsum dolor sit amet consectetur."
+          </p>
+          <button type="button" class="button button-primary">
+            Reservation
+          </button>
+        </section>
+      </div>
+    </header>
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-list-item">
+          <a href="#" class="navigation-link">Home</a>
+        </li>
+        <li class="navigation-list-item">
+          <a href="#" class="navigation-link">About Us</a>
+        </li>
+        <li class="navigation-list-item">
+          <a href="#" class="navigation-link">Menu</a>
+        </li>
+        <li class="navigation-list-item">
+          <a href="#" class="navigation-link">Gallery</a>
+        </li>
+        <li class="navigation-list-item">
+          <a href="#" class="navigation-link">Team</a>
+        </li>
+        <li class="navigation-list-item">
+          <a href="#" class="navigation-link">Reservation</a>
+        </li>
+        <li class="navigation-list-item">
+          <a href="#" class="navigation-link">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="home"></main>
+    <footer class="footer"></footer>
     <script src="/app/js/script.js"></script>
-</body>
+  </body>
 </html>
