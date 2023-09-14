@@ -29,7 +29,7 @@
           <p class="hero-description">
             "Lorem ipsum dolor sit amet consectetur."
           </p>
-          <button type="button" class="button button-primary">
+          <button type="button" class="button button-primary" id="hero-button">
             Reservation
           </button>
         </section>
@@ -62,6 +62,56 @@
         <p class="logo-name">Restaurant Cerasus</p>
       </ul>
     </nav>
+
+    <div class="modal-container">
+      <div class="form-container">
+        <form class="reservation-form">
+          <div class="reservation-form-top">
+            <div class="form-group">
+              <div class="form-control">
+                <label for="fullname">Full name:</label>
+                <input type="text" id="fullname" />
+              </div>
+              <div class="form-control">
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" />
+              </div>
+              <div class="form-control">
+                <label for="email">Email address:</label>
+                <input type="email" id="email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-control">
+                <label for="date">Date of booking</label>
+                <input type="date" id="date" />
+              </div>
+              <div class="form-control">
+                <label for="time">Time of booking</label>
+                <input type="time" id="time" />
+              </div>
+              <div class="form-control">
+                <label for="guest-count">Guest numbers</label>
+                <input type="number" id="guest-count" min="1" max="12" />
+              </div>
+            </div>
+          </div>
+          <div class="reservation-form-bottom">
+            <div class="form-group">
+              <div class="form-control form-check">
+                <input type="checkbox" id="form-check" />
+                <label for="form-check">
+                  I understand the menu may charge due to produce availability.
+                </label>
+              </div>
+              <div class="form-control">
+                <button type="button" class="button-secondary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <main class="home"></main>
 
