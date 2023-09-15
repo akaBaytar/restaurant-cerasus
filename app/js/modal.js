@@ -1,4 +1,4 @@
-export function modalFunction() {
+export function modal() {
   //dom variables
   const button = document.querySelector("#hero-button");
   const modal = document.querySelector(".modal-container");

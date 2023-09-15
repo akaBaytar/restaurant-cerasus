@@ -1,4 +1,4 @@
-export function navbarFunction() {
+export function navbar() {
   //dom variables
   const navCheckbox = document.querySelector("#nav-check");
   const navMenu = document.querySelector(".navigation");

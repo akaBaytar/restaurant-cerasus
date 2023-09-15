@@ -1,1 +1,4 @@
 app/sass
+node_modules
+package-lock.json
+package.json

@@ -1,7 +1,9 @@
 // imports
-import { navbarFunction } from "./navbar.js";
-import { modalFunction } from "./modal.js";
+import { carousel } from "./carousel.js";
+import { modal } from "./modal.js";
+import { navbar } from "./navbar.js";
 
 //call functions
-navbarFunction();
-modalFunction();
+carousel();
+modal();
+navbar();
