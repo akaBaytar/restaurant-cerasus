@@ -9,7 +9,18 @@ export function modal() {
     modal.classList.add("show");
   });
 
+  // mouse event
   window.addEventListener("click", (e) => {
+    if (
+      !e.composedPath().includes(form) &&
+      !e.composedPath().includes(button)
+    ) {
+      modal.classList.remove("show");
+    }
+  });
+
+  //touch event for mobile
+  window.addEventListener("touchstart", (e) => {
     if (
       !e.composedPath().includes(form) &&
       !e.composedPath().includes(button)

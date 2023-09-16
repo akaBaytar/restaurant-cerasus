@@ -13,7 +13,19 @@ export function navbar() {
     }
   });
 
+  // mouse event
   window.addEventListener("click", (e) => {
+    if (
+      !e.composedPath().includes(navMenu) &&
+      !e.composedPath().includes(navButton)
+    ) {
+      navCheckbox.checked = false;
+      navMenu.style.left = "-100%";
+    }
+  });
+
+  // touch event for mobile
+  window.addEventListener("touchstart", (e) => {
     if (
       !e.composedPath().includes(navMenu) &&
       !e.composedPath().includes(navButton)

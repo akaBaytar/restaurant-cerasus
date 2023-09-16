@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="/img/favicon/cerasus.ico"
+      href="/app/img/favicon/cerasus.ico"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="/dist/main.css" />
@@ -39,7 +39,7 @@
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-list-item">
-          <a href="./index.html" class="navigation-link active">Home</a>
+          <a href="/index.html" class="navigation-link active">Home</a>
         </li>
         <li class="navigation-list-item">
           <a href="#" class="navigation-link">About</a>
@@ -74,11 +74,11 @@
               </div>
               <div class="form-control">
                 <label for="phone">Phone number:</label>
-                <input type="tel" id="phone" />
+                <input type="tel" id="phone" autocomplete="tel" />
               </div>
               <div class="form-control">
                 <label for="email">Email address:</label>
-                <input type="email" id="email" />
+                <input type="email" id="email" autocomplete="email" />
               </div>
             </div>
             <div class="form-group">
@@ -129,7 +129,7 @@
             </p>
           </div>
           <div class="featured-container-right-side">
-            <img src="../img/food/1.png" alt="Signature Dishes" />
+            <img src="/app/img/food/1.png" alt="Signature Dishes" />
           </div>
         </div>
         <div class="section-icon-container">
@@ -148,7 +148,7 @@
             <button class="button button-primary">Click for the menu</button>
           </div>
           <div class="action-right-side">
-            <img src="../img/food/6.png" alt="" />
+            <img src="/app/img/food/6.png" alt="Different Flavors" />
           </div>
         </div>
       </section>
@@ -159,31 +159,31 @@
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides">
                 <li class="glide__slide">
-                  <img src="../img/food/1.png" />
+                  <img src="/app/img/food/1.png" />
                 </li>
                 <li class="glide__slide">
-                  <img src="../img/food/2.png" />
+                  <img src="/app/img/food/2.png" />
                 </li>
                 <li class="glide__slide">
-                  <img src="../img/food/3.png" />
+                  <img src="/app/img/food/3.png" />
                 </li>
                 <li class="glide__slide">
-                  <img src="../img/food/4.png" />
+                  <img src="/app/img/food/4.png" />
                 </li>
                 <li class="glide__slide">
-                  <img src="../img/food/5.png" />
+                  <img src="/app/img/food/5.png" />
                 </li>
                 <li class="glide__slide">
-                  <img src="../img/food/6.png" />
+                  <img src="/app/img/food/6.png" />
                 </li>
                 <li class="glide__slide">
-                  <img src="../img/food/7.png" />
+                  <img src="/app/img/food/7.png" />
                 </li>
                 <li class="glide__slide">
-                  <img src="../img/food/8.png" />
+                  <img src="/app/img/food/8.png" />
                 </li>
                 <li class="glide__slide">
-                  <img src="../img/food/9.png" />
+                  <img src="/app/img/food/9.png" />
                 </li>
               </ul>
             </div>
@@ -232,12 +232,12 @@
           <div class="contact-bottom">
             <form class="contact-form">
               <div class="form-group">
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="tel" placeholder="Phone" />
+                <input type="text" id="contact-name" placeholder="Name" />
+                <input type="email" id="contact-mail" placeholder="Email" />
+                <input type="tel" id="contact-tel" placeholder="Phone" />
               </div>
               <div class="form-group">
-                <textarea placeholder="Message"></textarea>
+                <textarea id="contact-message" placeholder="Message"></textarea>
               </div>
               <div class="form-group">
                 <button class="button button-secondary">Send</button>
@@ -316,7 +316,7 @@
       </div>
     </footer>
 
-    <script type="module" src="./js/script.js"></script>
-    <script src="/node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script type="module" src="/app/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
   </body>
 </html>
