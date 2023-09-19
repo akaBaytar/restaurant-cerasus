@@ -1,4 +1,7 @@
 export function carousel() {
+  
+  const glideContainer = document.querySelector(".glide");
+
   const config = {
     type: "carousel",
     startAt: 1,
@@ -23,5 +26,5 @@ export function carousel() {
     },
   };
 
-  new Glide(".glide", config).mount();
+  glideContainer && new Glide(".glide", config).mount();
 }

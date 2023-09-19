@@ -4,28 +4,23 @@ export function modal() {
   const modal = document.querySelector(".modal-container");
   const form = document.querySelector(".reservation-form");
 
+  //function
+  function clickOutside(e) {
+    if (
+      !e.composedPath().includes(form) &&
+      !e.composedPath().includes(button)
+    ) {
+      modal.classList.remove("show");
+    }
+  }
+
   //event listeners
-  button.addEventListener("click", () => {
-    modal.classList.add("show");
-  });
+  if (modal) {
+    button.addEventListener("click", () => {
+      modal.classList.add("show");
+    });
 
-  // mouse event
-  window.addEventListener("click", (e) => {
-    if (
-      !e.composedPath().includes(form) &&
-      !e.composedPath().includes(button)
-    ) {
-      modal.classList.remove("show");
-    }
-  });
-
-  //touch event for mobile
-  window.addEventListener("touchstart", (e) => {
-    if (
-      !e.composedPath().includes(form) &&
-      !e.composedPath().includes(button)
-    ) {
-      modal.classList.remove("show");
-    }
-  });
+    window.addEventListener("click", clickOutside);
+    window.addEventListener("touchstart", clickOutside);
+  }
 }
