@@ -2,12 +2,12 @@
 
 ## Overview of the project:
 
-- My first SASS project. 
-
-- A fictional restaurant project named after my hometown. The homepage is complete. 
+- A fictional multi-page restaurant project named after my hometown.
 
 - There are a few things to add, such as nicer button effects, a logo, etc.
 
-- Apart from that, I will soon start working on the other pages and expand the project over time.
+- Designed using HTML, SCSS, and JavaScript. 
+
+- Used the glide.js library for the carousel on the homepage and other than that, the project consists of vanilla JavaScript.
 
 - Once the project is entirely finished, code refactoring will be made.
